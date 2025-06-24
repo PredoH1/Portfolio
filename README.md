@@ -1,12 +1,61 @@
-# React + Vite
+# 💼 Portfólio Profissional - Pedro Henrique
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório do meu portfólio pessoal! Aqui compartilho minha trajetória, projetos e experiências na área de **Tecnologia da Informação**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Sobre o Projeto
 
-## Expanding the ESLint configuration
+Este portfólio foi iniciado em **24/06/2025** e representa um marco importante no meu desenvolvimento como profissional de TI. Ele tem como objetivo ser uma vitrine dos meus trabalhos, habilidades e aprendizados ao longo do tempo.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Além de apresentar meus projetos, este portfólio também serve como uma ferramenta de contato direto para quem deseja entrar em comunicação comigo ou sugerir melhorias.
+
+---
+
+## 🎯 Funcionalidades
+
+- ✅ **Página inicial animada** com apresentação pessoal
+- ✅ **Portfólio dinâmico e interativo**
+- ✅ **Página exclusiva para exibição de projetos**
+- ✅ **Design simples, moderno e profissional**
+- ✅ **Sistema de sugestões** com envio de mensagens
+- ✅ **Formulário de contato com envio de email**
+- ✅ **Animações suaves com GSAP e Swiper**
+- ✅ **Navegação com React Router DOM**
+- ✅ **Responsivo** para todos os tamanhos de tela
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- React
+- React Router DOM
+- Swiper.js
+- GSAP (GreenSock Animation Platform)
+- EmailJS
+
+---
+
+> ⚠️ A estrutura pode evoluir com o tempo conforme novas funcionalidades forem sendo implementadas.
+
+---
+
+## 📌 Status do Projeto
+
+🚧 **Em construção** — Última atualização: **24/06/2025**
+
+---
+
+## 📫 Contato
+
+Fique à vontade para entrar em contato ou enviar sugestões:
+
+- 📧 **Email:** pedroh200candido@gmail.com
+- 💼 **LinkedIn:** [linkedin.com/in/pedrohsouzacandido](https://www.linkedin.com/in/pedrohsouzacandido/)
+
+---
+
+Agradeço por visitar meu projeto! Sinta-se à vontade para contribuir, enviar feedbacks ou apenas explorar meu trabalho. 😊
