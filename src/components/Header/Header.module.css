@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .boxLogo a {
@@ -17,14 +18,65 @@
   font-weight: 500;
 }
 
-.container nav {
+.links {
   display: flex;
   justify-content: space-around;
 }
 
-.container nav a {
+nav a {
   color: #ffffff;
   text-decoration: none;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px;
   font-weight: 300;
+}
+
+.menuIcon {
+  display: none;
+}
+
+/* --- Responsivo  --- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .menuIcon {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    align-self: center;
+    margin: 1rem 0;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #111;
+    padding: 1rem 0;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .links a {
+    margin: 10px 0;
+  }
 }
