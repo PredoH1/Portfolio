@@ -1,0 +1,30 @@
+.header {
+  background-color: #111111;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxLogo a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+  font-weight: 300;
+}
