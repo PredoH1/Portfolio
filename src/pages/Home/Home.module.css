@@ -1,4 +1,139 @@
+/* SECTION APRESENTACAO */
+
 .main {
+  font-family: "Inter", sans-serif;
   background-color: #111111;
-  height: 100vh;
+  padding-top: 50px;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* novo container para alinhar com a header */
+.mainContainer {
+  max-width: 1200px; /* limite centralizado */
+  margin: 0 auto;
+  padding: 0 1.3rem; /* igual ao container da header */
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentacao {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 20px 0px 20px 0px;
+}
+
+.nomeTitle {
+  font-size: 80px;
+  font-weight: 400;
+  background: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SECTION EXPERIENCE */
+
+.experience {
+  margin: 10rem 0rem 7rem 0rem;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  background: #111;
+  max-width: 1200px;
+}
+
+.experience h2 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0rem 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid transparent;
+  color: #bbb;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  color: #fff;
+}
+
+.tab.active {
+  background: #222;
+  border: 1px solid #444;
+  color: #fff;
+  font-weight: 500;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  transition: 0.3s;
+}
+
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.experienceDetails {
+  background: #181818;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experienceHeader h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.experienceHeader span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.location {
+  font-size: 14px;
+  color: #5fa9ff;
+  margin: 0.5rem 0 1rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  color: #ddd;
 }

@@ -1,0 +1,108 @@
+.main {
+  font-family: "Inter", sans-serif;
+  background-color: #111;
+  min-height: 100vh;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.3rem;
+}
+
+.backBtn {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #4fa3ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.backBtn:hover {
+  color: #82c6ff;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.image {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  background: #222;
+  object-fit: contain;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.arrow:hover {
+  color: #fff;
+}
+
+.subTitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.techList li {
+  background: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #4fa3ff;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #82c6ff;
+}
