@@ -119,6 +119,7 @@ function Home() {
             </div>
           </section>
           <section className={style.projetos}>
+            <h2>Featured Projects</h2>
             <Grid />
           </section>
           <section className={style.contato}>

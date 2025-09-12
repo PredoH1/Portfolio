@@ -35,7 +35,6 @@ function Grid() {
 
   return (
     <section className={style.container}>
-      <h2 className={style.title}>Featured Projects</h2>
       <div className={style.grid}>
         {projects.map((project) => (
           <Link

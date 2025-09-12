@@ -1,0 +1,37 @@
+.main {
+  font-family: "Inter", sans-serif;
+  background-color: #111111;
+  padding-top: 50px;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  max-width: 1200px; /* igual à home */
+  margin: 0 auto;
+  padding: 0 1.3rem;
+}
+
+.backContainer {
+  margin-bottom: 1.5rem;
+}
+
+.backLink {
+  color: #4fa3ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: #33d2ff;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,25 +1,28 @@
 import Header from "../../components/Header";
+import Grid from "../../components/Grid";
+import style from "./Projects.module.css";
 import { Link } from "react-router-dom";
 
 function Projects() {
-  const projects = [
-    { id: 1, name: "Project One" },
-    { id: 2, name: "Project Two" },
-    { id: 3, name: "Project Three" },
-  ];
   return (
     <>
       <Header />
-      <div>
-        <h1>Meus Projetos</h1>
-        <ul>
-          {projects.map((project) => (
-            <li key={project.id}>
-              <Link to={`/projects/${project.id}`}>{project.name}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <main className={style.main}>
+        <div className={style.mainContainer}>
+          {/* Botão de voltar */}
+          <div className={style.backContainer}>
+            <Link to="/" className={style.backLink}>
+              ◀ Voltar para Home
+            </Link>
+          </div>
+
+          {/* Título */}
+          <h1 className={style.pageTitle}>Todos os Projetos</h1>
+
+          {/* Grid de projetos */}
+          <Grid />
+        </div>
+      </main>
     </>
   );
 }
