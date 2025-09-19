@@ -42,6 +42,8 @@
   color: #fff;
   background: #111;
   max-width: 1200px;
+  padding-bottom: 5rem;
+  border-bottom: #c6c6c6 1px solid;
 }
 
 .experience h2 {
@@ -136,4 +138,8 @@ li {
   margin-bottom: 0.5rem;
   font-size: 14px;
   color: #ddd;
+}
+
+.contato {
+  padding-top: 5rem;
 }

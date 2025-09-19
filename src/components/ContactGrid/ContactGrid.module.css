@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  border: 4px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(90deg, #9845e8, #33d2ff, #dd5789);
+  border-radius: 12px; /* opcional */
+  padding: 1rem;
+  color: #fff;
+}
+
+.bannerBox img {
+  width: 394px;
+  height: 623px;
+}

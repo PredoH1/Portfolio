@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import Grid from "../../components/Grid";
 import style from "../Home/Home.module.css";
 import React, { useState } from "react";
+import ContactGrid from "../../components/ContactGrid";
 
 function Home() {
   const experiences = [
@@ -123,7 +124,7 @@ function Home() {
             <Grid />
           </section>
           <section className={style.contato}>
-            <h1>Contato</h1>
+            <ContactGrid />
           </section>
         </div>
       </main>
