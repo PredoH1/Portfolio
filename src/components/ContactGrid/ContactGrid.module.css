@@ -1,16 +1,161 @@
-.container {
+.card {
+  width: 100%;
+  background: #111111;
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  border: 4px solid;
-  border-image-slice: 1;
-  border-width: 3px;
-  border-image-source: linear-gradient(90deg, #9845e8, #33d2ff, #dd5789);
-  border-radius: 12px; /* opcional */
-  padding: 1rem;
-  color: #fff;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 2rem;
+  gap: 2rem;
+  z-index: 0;
+}
+
+.card h2 {
+  z-index: 2;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+  z-index: 0;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  background: #111111;
+  inset: 5px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.bannerBox {
+  width: 50%;
+  z-index: 2;
 }
 
 .bannerBox img {
-  width: 394px;
-  height: 623px;
+  width: 350px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.contactInfo {
+  width: 50%;
+  z-index: 2;
+  color: white;
+  max-width: 400px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+/*input */
+.form input,
+.form textarea {
+  width: 100%;
+  color: white;
+  border: 2px solid #8707ff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+}
+
+.form input:active,
+.form textarea:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.form textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+/* botao enviar input*/
+.form button {
+  height: 50px;
+  margin: 5px;
+  width: 100%;
+  background: #111111;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #ffffff33 1px; /* leve transparência para suavizar */
+  font-size: 16px;
+  color: #ffffff;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  -webkit-box-shadow: -1px -5px 15px #9845e855, 5px 5px 15px #33d2ff55,
+    inset 5px 5px 10px #dd578955, inset -5px -5px 10px #9845e855;
+  box-shadow: -1px -5px 15px #9845e855, 5px 5px 15px #33d2ff55,
+    inset 5px 5px 10px #dd578955, inset -5px -5px 10px #9845e855;
+}
+
+.form button:hover {
+  -webkit-box-shadow: 1px 1px 13px #9845e8aa, -1px -1px 13px #33d2ffaa;
+  box-shadow: 1px 1px 13px #9845e8aa, -1px -1px 13px #33d2ffaa;
+  color: #ffffff;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.form button:active {
+  -webkit-box-shadow: 1px 1px 13px #9845e8cc, -1px -1px 33px #33d2ffcc;
+  box-shadow: 1px 1px 13px #9845e8cc, -1px -1px 33px #33d2ffcc;
+  color: #ffffff;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+/* butao WhatsApp*/
+
+.whatsappBtn {
+  width: 100%;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px;
+  background: #25d366;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.whatsappBtn:hover {
+  background: #1ebe5d;
 }
