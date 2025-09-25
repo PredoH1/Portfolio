@@ -29,10 +29,6 @@ function ContactGrid() {
 
   return (
     <section className={style.card}>
-      <div className={style.bannerBox}>
-        <img src={bannerContact} alt="banner de contato" />
-      </div>
-
       <div className={style.contactInfo}>
         <h2>Entre em Contato</h2>
         <form ref={form} onSubmit={sendEmail} className={style.form}>
