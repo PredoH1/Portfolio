@@ -13,34 +13,24 @@
   padding: 0 1.3rem;
 }
 
-.backButton {
-  background: none;
-  border: 1px solid #444;
-  color: #aaa;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-bottom: 2rem;
-  transition: 0.3s;
+.backContainer {
+  margin-bottom: 1.5rem;
 }
 
-.backButton:hover {
-  color: #fff;
-  border-color: #888;
+.backLink {
+  color: #4fa3ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: #33d2ff;
 }
 
 /* Bibliografia */
 .aboutMe {
   margin-bottom: 5rem;
-}
-
-.nomeTitle {
-  font-size: 60px;
-  font-weight: 400;
-  background: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
 }
 
 .bio {
@@ -135,6 +125,10 @@
 
 /* Chamada para contato */
 .contactCall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #181818;
   padding: 2rem;
   border-radius: 8px;
@@ -142,21 +136,96 @@
 }
 
 .contactCall p {
-  font-size: 16px;
-  margin-bottom: 1rem;
+  font-size: 17px;
+  margin: 1rem;
+  text-align: justify;
 }
 
-.contactButton {
-  padding: 1rem 2rem;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.contactCall h2 {
+  font-size: 30px;
   background: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
-  color: #fff;
-  transition: 0.3s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.contactButton:hover {
-  opacity: 0.8;
+.contactCall ul {
+  font-size: 20px;
+  width: 50%;
+  text-align: justify;
+}
+
+.contactCall li {
+  font-size: 17px;
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 102px;
+  height: 102px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 27px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
