@@ -3,6 +3,12 @@ import React, { useState, useRef, useEffect } from "react";
 import Header from "../../components/Header";
 import style from "../Resume/Resume.module.css";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { register } from "swiper/element/bundle";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+register();
 
 import htmlIcon from "../../assets/html.png";
 import cssIcon from "../../assets/css.png";
@@ -47,11 +53,11 @@ function Resume() {
   ];
 
   const certificacoes = [
-    { name: "Certificação 1", file: cert1 },
-    { name: "Certificação 2", file: cert2 },
-    { name: "Certificação 3", file: cert3 },
-    { name: "Certificação 4", file: cert4 },
-    { name: "Certificação 5", file: cert5 },
+    { name: "Excel Avancado", file: cert1 },
+    { name: "Desenvolvimento Web", file: cert2 },
+    { name: "CiberSegurança", file: cert3 },
+    { name: "Inglês", file: cert4 },
+    { name: "Banco de Dados", file: cert5 },
   ];
 
   // Scroll automático do carrossel
@@ -83,28 +89,44 @@ function Resume() {
           {/* Resumo / Bibliografia */}
           <section className={style.aboutMe}>
             <p className={style.bio}>
-              Me chamo Pedro Henrique Souza Candido, atualmente moro em
-              Goiânia/Goias e sempre fui apaixonado por tecnologia. Desde sempre
-              colaborei no desenvolvimento relacionado a TI. Faço Sistemas de
-              Informação e estou no 4º período. Por meio da minha dedicação,
-              tive a oportunidade de realizar diversos feitos profissionais e
-              acadêmicos, com destaque e visibilidade, podendo até competir
-              estadualmente com o aplicativo "Suplementando", que desenvolvemos
-              em equipe. Também trabalhei em uma multinacional, desenvolvendo
-              habilidades em automação, Excel e desenvolvimento web. Hoje posso
-              contribuir oferecendo meu trabalho como desenvolvedor, atendendo
-              clientes com sites, automações, ferramentas de gerenciamento e
-              muito mais. Suporte 24h.
+              Olá! Sou Pedro Henrique Souza Candido, graduando em Sistemas de
+              Informação e atualmente atuo como Desenvolvedor de Automação na
+              multinacional Coty. Paralelamente, trabalho como freelancer na
+              área de desenvolvimento web, mobile e automação empresarial, com
+              foco em otimizar processos e simplificar a rotina de negócios por
+              meio de soluções ágeis e inteligentes. Ao longo da minha
+              trajetória, tive o privilégio de participar de diversos projetos
+              corporativos e acadêmicos, adquirindo experiência prática e sólida
+              em diferentes contextos tecnológicos. Possuo certificações em
+              Desenvolvimento Web, Banco de Dados, Cibersegurança, Excel, VBA,
+              Inglês e Logística, o que me permite atuar com segurança e
+              versatilidade em múltiplas frentes de desenvolvimento.
             </p>
           </section>
 
           {/* Tech Skills Carousel */}
+
           <section className={style.techSkills}>
             <h2 className={style.titleHome}>Tech Skills</h2>
-            <div className={style.carousel} ref={scrollRef}>
-              {techIcons.map((icon, index) => (
-                <img key={index} src={icon} alt="" className={style.techIcon} />
-              ))}
+
+            <div className={style.boxCarrosel}>
+              <Swiper
+                slidesPerView={4}
+                spaceBetween={30}
+                pagination={{ clickable: true }}
+                modules={[Pagination]}
+                className={style.swiper}
+              >
+                {techIcons.map((icon, index) => (
+                  <SwiperSlide key={index} className={style.swiperSlide}>
+                    <img
+                      src={icon}
+                      alt={`Tech icon ${index}`}
+                      className={style.techIcon}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </section>
 
@@ -156,32 +178,24 @@ function Resume() {
 
           {/* Chamada para contato */}
           <section className={style.contactCall}>
-            <h2>Impulsione Sua Carreira e Digitalize Seu Negócio</h2>
-            <p>
-              Ofereço consultoria e desenvolvimento de soluções tecnológicas
-              personalizadas para otimizar sua performance e gestão.
-            </p>
-
-            <p>Minha expertise abrange:</p>
+            <h2>Ofereço serviços personalizados como:</h2>
 
             <ul>
               <li>
-                Digitalização Completa: Criação e desenvolvimento de sites
-                profissionais.
+                Criação de Landing Pages profissionais para empresas e
+                empreendedores;
               </li>
-              <li>
-                Automação e Otimização: Automatização de processos e
-                aprimoramento de planilhas e sistemas de controle.
-              </li>
-              <li>
-                Gestão Eficiente: Desenvolvimento de ferramentas customizadas de
-                gerenciamento.
-              </li>
+              <li>Desenvolvimento de sistemas de gestão sob medida;</li>
+              <li>Integração de bancos de dados e APIs;</li>
+              <li>Aplicativos Web e Mobile completos;</li>
+              <li>Automação de planilhas e macros VBA;</li>
+              <li>Desenvolvimento full stack (front-end e back-end);</li>
+              <li>Suporte vitalício após a entrega do projeto.</li>
             </ul>
 
             <p>
-              Entre em contato para estruturarmos a solução ideal para o seu
-              sucesso.
+              Meu compromisso é transformar ideias em soluções eficientes, com
+              qualidade, performance e design profissional.
             </p>
             <div className={style.card}>
               <a
@@ -197,14 +211,35 @@ function Resume() {
               </a>
 
               <a
-                href="#"
+                href="https://github.com/seuusuario"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`${style.socialContainer} ${style.containerTwo}`}
               >
                 <svg
-                  className={`${style.socialSvg} ${style.twitterSvg}`}
-                  viewBox="0 0 16 16"
+                  className={`${style.socialSvg} ${style.githubSvg}`}
+                  viewBox="-267 288.9 264.5 225.1"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                  <path
+                    d="M-21.8,354.4c-0.8-0.9-1.3-2.3-1.2-3.5c0.9-20.1-1.8-39.6-8.6-58.6c-0.9-2.4-2-3.3-4.5-2.6c-5.6,1.7-11.4,3-16.9,5 
+                    c-15.2,5.5-29.1,13.5-42.6,22.2c-1.4,0.9-3.5,1.5-5.2,1.2c-22.1-3.9-44.3-3.7-66.5-0.3c-2.2,0.3-5-0.2-6.8-1.3 
+                    c-15.7-10.2-31.7-20.2-50-25c-15.1-4-12-4.8-16.3,8.9c-5.1,16.4-7.1,33.4-6,50.6c0.1,1.2-0.8,2.7-1.6,3.8 
+                    c-6.6,7.9-11.7,16.6-14.8,26.4c-6,19-4.8,38.2-1,57.3c7.5,37.5,32.8,63.8,70.2,70.3c19.3,3.4,39.2,3.7,57.3,5.2 
+                    c20.2-1.5,38.9-1.6,57.1-4.5c31.8-5.1,55.8-22,67.8-52.7c4.2-10.7,6.5-22.4,7.9-33.8C-0.3,397.9-4.6,374.3-21.8,354.4z 
+                    M-39.5,458.8c-3.3,15.6-12.4,26.3-27.6,31.8c-14.7,5.4-29.9,7.6-45.4,8.6c-7.5,0.5-15,0.1-22.5,0.1
+                    c-20.2,0.4-40.4-0.4-59.9-6.2 c-24.5-7.3-35.5-21.9-36.2-47.5c-0.3-9.1,0.7-17.9,5-26.1c8.5-16.5,23.2-22.3,40.6-22.6
+                    c9.5-0.1,19.1,0.7,28.7,1.6 c20.1,1.8,40-0.1,60-1.2c8.8-0.5,17.8-0.7,26.4,0.8c18.5,3.2,32.5,21.6,32.8,42.3
+                    C-37.6,446.5-38.3,452.8-39.5,458.8z"
+                  ></path>
+                  <path
+                    d="M-191.5,424.5c-5.5,5.7-7.4,12.9-7.7,19.3c0,9.6,2.8,17.3,7.7,22.3c6.8,6.9,16.1,6.7,22.6-0.3
+                    c9.8-10.6,9.7-30.5,0-41 C-175.4,417.7-184.9,417.6-191.5,424.5z"
+                  ></path>
+                  <path
+                    d="M-99.4,423.7c-11.2,10.3-11.2,33,0,43.2c6.5,5.9,15.3,5.6,21.4-0.7
+                    c5.6-5.8,7.6-13.1,7.8-21c-0.2-7.9-2.2-15.1-7.9-20.9 C-84.2,418-93,417.8-99.4,423.7z"
+                  ></path>
                 </svg>
               </a>
 

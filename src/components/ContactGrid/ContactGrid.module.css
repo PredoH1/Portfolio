@@ -87,8 +87,19 @@
   z-index: 1;
 }
 
+.imgContact {
+  position: relative;
+  z-index: 3;
+}
+
+.imgContact img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
 .contactInfo {
-  width: 60%;
+  width: 30%;
   z-index: 2;
   color: white;
 }

@@ -44,18 +44,37 @@
   margin-bottom: 5rem;
 }
 
-.carousel {
+.boxCarrosel {
+  background-color: #fff;
+  border-radius: 8px;
+  height: 130px;
+  margin-top: 2rem;
+}
+
+.swiper {
+  width: 95%;
+  height: 100%;
+  background: transparent;
+}
+
+.swiperSlide {
   display: flex;
-  overflow-x: hidden;
-  gap: 1rem;
-  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .techIcon {
-  height: 50px;
-  width: 50px;
+  width: 90px;
+  height: 90px;
+  margin-top: 0.5rem;
   object-fit: contain;
-  flex-shrink: 0;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.techIcon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #4fa3ff);
 }
 
 /* Certificações */
@@ -149,6 +168,7 @@
 }
 
 .contactCall ul {
+  margin: 2rem 0rem 2rem 0rem;
   font-size: 20px;
   width: 50%;
   text-align: justify;
@@ -227,5 +247,17 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .swiper {
+    width: 100%;
+  }
+
+  .techIcon {
+    width: 60px;
+    height: 60px;
   }
 }
