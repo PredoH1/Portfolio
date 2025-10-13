@@ -3,6 +3,7 @@ import Grid from "../../components/Grid";
 import style from "../Home/Home.module.css";
 import React, { useState } from "react";
 import ContactGrid from "../../components/ContactGrid";
+import Footer from "../../components/Footer";
 
 function Home() {
   const experiences = [
@@ -57,16 +58,21 @@ function Home() {
       <main className={style.main}>
         <div className={style.mainContainer}>
           <section className={style.aboutMe}>
-            <p className={style.apresentacao}>Hey, I’m</p>
+            <p className={style.apresentacao}>Ola, me chamo</p>
             <h1 className={style.nomeTitle}>Pedro Henrique Souza Candido</h1>
             <p className={style.apresentacao}>
-              Sou Jovem Profissional/estagiário na Coty, atuando no suporte ao
-              time de Logística Reversa. Tenho experiência em SAP, análise e
-              tratamento de dados. Tambem desenvolvo projetos de automação e
-              melhoria utilizando VBA, PowerApps e Power Automate, com
-              integrações entre macros e SAP, otimizando fluxos de trabalho e
-              aumentando a produtividade da área. Nas horas vagas atuo como
-              desenvolvedor Front-End freelancer,
+              Olá! Sou Pedro Henrique Souza Candido, graduando em Sistemas de
+              Informação e atualmente atuo como Desenvolvedor de Automação na
+              multinacional Coty. Paralelamente, trabalho como freelancer na
+              área de desenvolvimento web, mobile e automação empresarial, com
+              foco em otimizar processos e simplificar a rotina de negócios por
+              meio de soluções ágeis e inteligentes. Ao longo da minha
+              trajetória, tive o privilégio de participar de diversos projetos
+              corporativos e acadêmicos, adquirindo experiência prática e sólida
+              em diferentes contextos tecnológicos. Possuo certificações em
+              Desenvolvimento Web, Banco de Dados, Cibersegurança, Excel, VBA,
+              Inglês e Logística, o que me permite atuar com segurança e
+              versatilidade em múltiplas frentes de desenvolvimento.
             </p>
           </section>
 
@@ -128,6 +134,7 @@ function Home() {
           </section>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

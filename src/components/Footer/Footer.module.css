@@ -1,0 +1,101 @@
+.footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  background-color: #111111;
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0rem 3rem 0rem;
+}
+
+/* -- Box do perfil -- */
+.boxProfile {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  border-right: #c6c6c6 1px solid;
+}
+
+.cardProfile {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden; /* garante o corte circular */
+  border: 3px solid #9845e8;
+  box-shadow: 0 0 20px #33d2ff55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardProfile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém proporção e evita achatamento */
+  border-radius: 50%;
+}
+
+.boxProfile h3 {
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+}
+
+.boxProfile p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+/* -- Box de chamada -- */
+.boxCall {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.boxCall h1 {
+  font-size: 2rem;
+  color: fff;
+}
+
+.boxCall p {
+  color: #ccc;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.boxCall button {
+  height: 50px;
+  width: 95%;
+  background: #111111;
+  border: solid #ffffff33 1px;
+  font-size: 16px;
+  color: #ffffff;
+  transition: 500ms;
+  border-radius: 5px;
+  box-shadow: -1px -5px 15px #9845e855, 5px 5px 15px #33d2ff55,
+    inset 5px 5px 10px #dd578955, inset -5px -5px 10px #9845e855;
+  cursor: pointer;
+}
+
+.boxCall button:hover {
+  box-shadow: 1px 1px 13px #9845e8aa, -1px -1px 13px #33d2ffaa;
+}
+
+.boxCall button:active {
+  box-shadow: 1px 1px 13px #9845e8cc, -1px -1px 33px #33d2ffcc;
+  transition: 100ms;
+}

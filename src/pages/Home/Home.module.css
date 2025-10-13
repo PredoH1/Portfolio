@@ -3,7 +3,7 @@
 .main {
   font-family: "Inter", sans-serif;
   background-color: #111111;
-  padding-top: 50px;
+  padding: 50px 0px 100px 0px;
   color: #ffffff;
   min-height: 100vh;
 }
