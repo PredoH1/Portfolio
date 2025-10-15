@@ -11,27 +11,31 @@ function ContactGrid() {
 
     emailjs
       .sendForm(
-        "service_0opgvpm", // Pega no EmailJS
-        "template_yp4slvp", // Pega no EmailJS
+        "service_0opgvpm", // ID do serviço no EmailJS
+        "template_yp4slvp", // ID do template no EmailJS
         form.current,
-        "hk4EdxdSkIthHyA9N" // Pega no EmailJS
+        "hk4EdxdSkIthHyA9N" // Public key do EmailJS
       )
       .then(
-        (result) => {
-          alert("Mensagem enviada com sucesso!");
+        () => {
+          alert("✅ Mensagem enviada com sucesso!");
+          form.current.reset();
         },
         (error) => {
-          alert("Erro ao enviar, tente novamente.");
-          console.log(error.text);
+          alert("❌ Erro ao enviar, tente novamente.");
+          console.error(error.text);
         }
       );
   };
 
   return (
     <section className={style.card}>
+      {/* Imagem lateral */}
       <div className={style.imgContact}>
-        <img src={bannerContact} alt="" />
+        <img src={bannerContact} alt="Imagem de contato" />
       </div>
+
+      {/* Formulário */}
       <div className={style.contactInfo}>
         <h2>Entre em Contato</h2>
         <form ref={form} onSubmit={sendEmail} className={style.form}>
@@ -47,7 +51,7 @@ function ContactGrid() {
             placeholder="Sua Mensagem"
             required
           ></textarea>
-          <button type="submit">Enviar</button>
+          <button type="submit">Enviar Mensagem</button>
         </form>
 
         <a

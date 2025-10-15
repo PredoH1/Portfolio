@@ -30,6 +30,7 @@ import cert2 from "../../files/Certificado2.png";
 import cert3 from "../../files/Certificado3.png";
 import cert4 from "../../files/Certificado4.pdf";
 import cert5 from "../../files/Certificado5.pdf";
+import Footer from "../../components/Footer";
 
 function Resume() {
   const [scrollX, setScrollX] = useState(0);
@@ -270,6 +271,7 @@ function Resume() {
           </section>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

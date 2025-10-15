@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
 import ContactGrid from "../../components/ContactGrid";
 import style from "../Contact/Contact.module.css";
+import Footer from "../../components/Footer";
 
 function Contact() {
   return (
@@ -79,6 +80,7 @@ function Contact() {
           </a>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import Grid from "../../components/Grid";
 import style from "./Projects.module.css";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer";
 
 function Projects() {
   return (
@@ -23,6 +24,7 @@ function Projects() {
           <Grid />
         </div>
       </main>
+      <Footer />
     </>
   );
 }

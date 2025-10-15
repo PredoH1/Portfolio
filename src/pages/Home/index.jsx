@@ -61,23 +61,23 @@ function Home() {
             <p className={style.apresentacao}>Ola, me chamo</p>
             <h1 className={style.nomeTitle}>Pedro Henrique Souza Candido</h1>
             <p className={style.apresentacao}>
-              Olá! Sou Pedro Henrique Souza Candido, graduando em Sistemas de
-              Informação e atualmente atuo como Desenvolvedor de Automação na
-              multinacional Coty. Paralelamente, trabalho como freelancer na
-              área de desenvolvimento web, mobile e automação empresarial, com
-              foco em otimizar processos e simplificar a rotina de negócios por
-              meio de soluções ágeis e inteligentes. Ao longo da minha
-              trajetória, tive o privilégio de participar de diversos projetos
-              corporativos e acadêmicos, adquirindo experiência prática e sólida
-              em diferentes contextos tecnológicos. Possuo certificações em
-              Desenvolvimento Web, Banco de Dados, Cibersegurança, Excel, VBA,
-              Inglês e Logística, o que me permite atuar com segurança e
-              versatilidade em múltiplas frentes de desenvolvimento.
+              graduando em Sistemas de Informação e atualmente atuo como
+              Desenvolvedor de Automação na multinacional Coty. Paralelamente,
+              trabalho como freelancer na área de desenvolvimento web, mobile e
+              automação empresarial, com foco em otimizar processos e
+              simplificar a rotina de negócios por meio de soluções ágeis e
+              inteligentes. Ao longo da minha trajetória, tive o privilégio de
+              participar de diversos projetos corporativos e acadêmicos,
+              adquirindo experiência prática e sólida em diferentes contextos
+              tecnológicos. Possuo certificações em Desenvolvimento Web, Banco
+              de Dados, Cibersegurança, Excel, VBA, Inglês e Logística, o que me
+              permite atuar com segurança e versatilidade em múltiplas frentes
+              de desenvolvimento.
             </p>
           </section>
 
           <section className={style.experience}>
-            <h2 className={style.titleHome}>Experience</h2>
+            <h1 className={style.titleHome}>Experience</h1>
             <div className={style.carousel}>
               <button
                 className={style.arrow}
