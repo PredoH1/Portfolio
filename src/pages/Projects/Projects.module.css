@@ -3,13 +3,12 @@
   background-color: #111111;
   padding-top: 50px;
   color: #ffffff;
-  min-height: 100vh;
 }
 
 .mainContainer {
   max-width: 1200px; /* igual à home */
   margin: 0 auto;
-  padding: 0 1.3rem;
+  padding-bottom: 4rem;
 }
 
 .backContainer {
@@ -34,4 +33,10 @@
   background: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .backLink {
+    font-size: 1.2rem;
+  }
 }

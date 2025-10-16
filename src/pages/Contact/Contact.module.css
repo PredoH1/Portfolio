@@ -1,12 +1,14 @@
 .sectionInfo {
   font-family: "Inter", sans-serif;
-  height: 100vh;
+  min-height: 100vh; /* antes era height, trocamos para min-height */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color: #111111;
-  gap: 2rem; /* espaçamento entre o card e o grid */
+  gap: 2rem;
+  padding-top: 120px; /* espaço para o Header fixo */
+  box-sizing: border-box;
 }
 
 /* From Uiverse.io by vinodjangid07 */
@@ -82,5 +84,43 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionInfo {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .socialContainer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .socialSvg {
+    width: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionInfo {
+    gap: 1.5rem;
+    padding-top: 80px;
+  }
+
+  .socialContainer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .socialSvg {
+    width: 20px;
   }
 }

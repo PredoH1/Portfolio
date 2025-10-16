@@ -112,7 +112,7 @@ function Resume() {
 
             <div className={style.boxCarrosel}>
               <Swiper
-                slidesPerView={4}
+                slidesPerView={3}
                 spaceBetween={30}
                 pagination={{ clickable: true }}
                 modules={[Pagination]}
@@ -133,7 +133,7 @@ function Resume() {
 
           {/* Certificações */}
           <section className={style.certificacoes}>
-            <h2 className={style.titleHome}>Certificações</h2>
+            <h2>Certificações</h2>
             <div className={style.certGrid}>
               {certificacoes.map((cert, i) => (
                 <button

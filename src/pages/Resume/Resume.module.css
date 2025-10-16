@@ -5,6 +5,7 @@
   color: #fff;
   min-height: 100vh;
   padding-top: 50px;
+  padding-bottom: 3rem;
 }
 
 .mainContainer {
@@ -80,6 +81,10 @@
 /* Certificações */
 .certificacoes {
   margin-bottom: 5rem;
+}
+
+.certificacoes h2 {
+  padding-bottom: 2rem;
 }
 
 .certGrid {
@@ -252,12 +257,33 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
+  .backLink {
+    font-size: 1.2rem;
+  }
+  .bio {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
   .swiper {
     width: 100%;
   }
 
   .techIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contactCall ul {
+    width: 100%;
+  }
+
+  .socialContainer {
     width: 60px;
     height: 60px;
+  }
+
+  .socialSvg {
+    width: 15px;
   }
 }
