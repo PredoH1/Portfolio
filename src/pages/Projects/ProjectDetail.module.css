@@ -3,13 +3,13 @@
   background-color: #111;
   min-height: 100vh;
   color: #fff;
-  padding: 50px 0;
+  padding: 0px 0;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.3rem;
+  padding: 4rem 0rem;
 }
 
 .backBtn {
@@ -47,7 +47,7 @@
 }
 
 .image {
-  width: 600px;
+  width: 1000px;
   height: auto;
   border-radius: 10px;
   background: #222;

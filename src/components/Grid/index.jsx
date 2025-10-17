@@ -1,14 +1,16 @@
 import style from "../Grid/Grid.module.css";
 import { Link } from "react-router-dom";
+import AutoRisque from "../../images/AutoRisque.png";
 
 function Grid() {
   const projects = [
     {
       id: 1,
-      name: "Project One",
+      image: AutoRisque,
+      name: "Automação Risque",
       description:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat.",
-      techs: ["React", "Bootstrap", "Styled Components"],
+        "Essa automação foi desenvolvido para a Logistica Reversa da Coty, onde foi indentificado a necessidade de criar uma ferramenta simples e agil para a demanda da area, solucionando um problema da area, esse aplicativo permite imprimir etiquetas de risque em massa",
+      techs: ["HTML", "CSS", "Javascript", "ZPL", "Excel"],
     },
     {
       id: 2,
@@ -43,7 +45,9 @@ function Grid() {
             className={style.card}
           >
             {/* Placeholder da imagem - você substitui depois */}
-            <div className={style.imagePlaceholder}></div>
+            <div className={style.imagePlaceholder}>
+              <img src={project.image} alt={project.name} />
+            </div>
 
             {/* Informações do projeto */}
             <div className={style.info}>

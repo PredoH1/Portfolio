@@ -2,21 +2,20 @@
 import { useParams, Link } from "react-router-dom";
 import { useState } from "react";
 import style from "./ProjectDetail.module.css";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+
+import AutoRisque from "../../images/AutoRisque.png";
 
 const projects = [
   {
     id: 1,
-    name: "Project One",
+    name: "Automação Risque",
     description:
-      "Um projeto desenvolvido em React, com foco em frontend moderno e responsivo.",
-    images: [
-      "/images/proj1-1.png",
-      "/images/proj1-2.png",
-      "/images/proj1-3.png",
-    ],
-    techs: ["React", "Bootstrap", "Styled Components"],
-    github: "https://github.com/seu-repo/project-one",
-    demo: "https://project-one.vercel.app",
+      "Essa automação foi desenvolvido para a Logistica Reversa da Coty, onde foi indentificado a necessidade de criar uma ferramenta simples e agil para a demanda da area, solucionando um problema da area, esse aplicativo permite imprimir etiquetas de risque em massa. O aplicativo puxa os dados das etiquetas de risque do Excel.",
+    images: [AutoRisque],
+    techs: ["HTML", "CSS", "Javascript", "ZPL", "Excel"],
+    github: "https://github.com/PredoH1/RisqueAutomac",
   },
   {
     id: 2,
@@ -58,10 +57,11 @@ export default function ProjectDetail() {
 
   return (
     <main className={style.main}>
+      <Header />
       <div className={style.container}>
         {/* Botão de voltar */}
         <Link to="/projects" className={style.backBtn}>
-          ← Voltar para projetos
+          ◀ Voltar para projetos
         </Link>
 
         {/* Nome e descrição */}
@@ -101,6 +101,8 @@ export default function ProjectDetail() {
           </a>
         </div>
       </div>
+
+      <Footer />
     </main>
   );
 }
