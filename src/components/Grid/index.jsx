@@ -2,6 +2,9 @@ import style from "../Grid/Grid.module.css";
 import { Link } from "react-router-dom";
 import AutoRisque from "../../images/AutoRisque.png";
 import PlannerPlay1 from "../../images/PlannerPlay1.png";
+import Suple1 from "../../images/Suple1.png";
+import CapLogistica1 from "../../images/CapLogistica1.png";
+import AutoSAP1 from "../../images/AutoSAP1.png";
 
 function Grid() {
   const projects = [
@@ -32,17 +35,28 @@ function Grid() {
     },
     {
       id: 3,
-      name: "Project Three",
+      image: Suple1,
+      name: "Aplicativo Suplementando",
       description:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat.",
-      techs: ["React", "Firebase", "Tailwind"],
+        "Aplicativo fitness que ajuda você a conhecer e comparar suplementos de forma segura, com informações sobre ingredientes e avaliação conforme critérios da ANVISA. Projeto com visibilidade estadual na competição Desafio Liga Jovem. Ainda em Desenvolvimento",
+      techs: ["React Native", "Firebase", "Figma"],
     },
     {
       id: 4,
-      name: "Project Four",
+      image: CapLogistica1,
+      name: "Programa de Capacitação em Logística",
       description:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat.",
-      techs: ["React", "MongoDB", "Prisma"],
+        "Plataforma de apoio ao aprendizado dos colaboradores, com conteúdos, exercícios práticos e teóricos, integração com Excel e funcionalidades interativas para revisão das aulas.",
+      techs: ["Google Sites", "HTML", "CSS", "Javascript", "Excel"],
+    },
+
+    {
+      id: 5,
+      image: AutoSAP1,
+      name: "Automação SAP - Buscar e Filtrar Dados",
+      description:
+        "Automação desenvolvida para extrair e filtrar dados de depósitos no SAP, exportando-os automaticamente para o Excel. Reduz o tempo de execução de tarefas repetitivas, minimiza erros e aumenta a eficiência do processo logístico.",
+      techs: ["SAP", "VBA", "Excel"],
     },
   ];
 

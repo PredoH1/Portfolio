@@ -4,6 +4,7 @@ import Contact from "./pages/Contact/index.jsx";
 import Projects from "./pages/Projects/index.jsx";
 import ProjectDetail from "./pages/Projects/ProjectDetail.jsx";
 import Resume from "./pages/Resume/index.jsx";
+import ErrorPage from "./pages/ErrorPage/index.jsx";
 
 function AppRoutes() {
   return (
@@ -14,6 +15,7 @@ function AppRoutes() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />{" "}
         <Route path="/resume" element={<Resume />} />
+        <Route path="/error" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
