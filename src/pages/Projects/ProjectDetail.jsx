@@ -6,6 +6,11 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 import AutoRisque from "../../images/AutoRisque.png";
+import PlannerPlay1 from "../../images/PlannerPlay1.png";
+import PlannerPlay2 from "../../images/PlannerPlay2.png";
+import PlannerPlay3 from "../../images/PlannerPlay3.png";
+import PlannerPlay4 from "../../images/PlannerPlay4.png";
+import PlannerPlay5 from "../../images/PlannerPlay5.png";
 
 const projects = [
   {
@@ -19,13 +24,28 @@ const projects = [
   },
   {
     id: 2,
-    name: "Project Two",
+    name: "CACByPlannerPlay",
     description:
-      "Aplicação full-stack com Node.js no backend e React no frontend.",
-    images: ["/images/proj2-1.png", "/images/proj2-2.png"],
-    techs: ["React", "Node.js", "Express"],
-    github: "https://github.com/seu-repo/project-two",
-    demo: "https://project-two.vercel.app",
+      "Projeto universitário voltado ao desenvolvimento de uma plataforma web para pequenos empreendedores com pouca familiaridade com tecnologia, como pessoas idosas. A solução elimina o uso de papel e simplifica a gestão do negócio.",
+    images: [
+      PlannerPlay1,
+      PlannerPlay2,
+      PlannerPlay3,
+      PlannerPlay4,
+      PlannerPlay5,
+    ],
+    techs: [
+      "React",
+      "Node.js",
+      "Express",
+      "MySql",
+      "Apexcharts",
+      "gsap",
+      "swiper",
+      "Cloud",
+    ],
+    github: "https://github.com/PredoH1/CACByPlannerPlay",
+    demo: "https://cacplannerplay.netlify.app",
   },
 ];
 

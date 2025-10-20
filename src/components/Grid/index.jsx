@@ -1,6 +1,7 @@
 import style from "../Grid/Grid.module.css";
 import { Link } from "react-router-dom";
 import AutoRisque from "../../images/AutoRisque.png";
+import PlannerPlay1 from "../../images/PlannerPlay1.png";
 
 function Grid() {
   const projects = [
@@ -14,10 +15,20 @@ function Grid() {
     },
     {
       id: 2,
-      name: "Project Two",
+      image: PlannerPlay1,
+      name: "CACByPlannerPlay",
       description:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat.",
-      techs: ["React", "Node.js", "Express"],
+        "Projeto universitário voltado ao desenvolvimento de uma plataforma web para pequenos empreendedores com pouca familiaridade com tecnologia, como pessoas idosas. A solução elimina o uso de papel e simplifica a gestão do negócio.",
+      techs: [
+        "React",
+        "Node.js",
+        "Express",
+        "MySql",
+        "Apexcharts",
+        "gsap",
+        "swiper",
+        "Cloud",
+      ],
     },
     {
       id: 3,
