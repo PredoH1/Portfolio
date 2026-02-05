@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 register();
 
 import htmlIcon from "../../assets/html.png";
+import biIcon from "../../assets/powerBi.png";
 import cssIcon from "../../assets/css.png";
 import excelIcon from "../../assets/excel.png";
 import googleSitesIcon from "../../assets/googleSites.png";
@@ -38,6 +39,7 @@ function Resume() {
   const [modalFile, setModalFile] = useState(null);
 
   const techIcons = [
+    biIcon,
     htmlIcon,
     cssIcon,
     excelIcon,
@@ -90,18 +92,19 @@ function Resume() {
           {/* Resumo / Bibliografia */}
           <section className={style.aboutMe}>
             <p className={style.bio}>
-              Olá! Sou Pedro Henrique Souza Candido, graduando em Sistemas de
-              Informação e atualmente atuo como Desenvolvedor de Automação na
-              multinacional Coty. Paralelamente, trabalho como freelancer na
-              área de desenvolvimento web, mobile e automação empresarial, com
-              foco em otimizar processos e simplificar a rotina de negócios por
-              meio de soluções ágeis e inteligentes. Ao longo da minha
-              trajetória, tive o privilégio de participar de diversos projetos
-              corporativos e acadêmicos, adquirindo experiência prática e sólida
-              em diferentes contextos tecnológicos. Possuo certificações em
-              Desenvolvimento Web, Banco de Dados, Cibersegurança, Excel, VBA,
-              Inglês e Logística, o que me permite atuar com segurança e
-              versatilidade em múltiplas frentes de desenvolvimento.
+              Olá! Sou Pedro Henrique Souza Candido Graduando em Sistemas de
+              Informação e Assistente de Automação e BI na multinacional Coty.
+              Meu foco é transformar processos operacionais em soluções digitais
+              inteligentes, unindo análise de dados e desenvolvimento de
+              software para simplificar rotinas de negócio. Atualmente, trabalho
+              na interseção entre Logística e Tecnologia, desenvolvendo
+              indicadores estratégicos em Power BI (DAX/Query), aplicativos
+              operacionais em PowerApps e automações complexas que integram
+              Python, SAP e o ecossistema Power Platform. Paralelamente, atuo
+              como desenvolvedor freelancer, entregando soluções web e mobile
+              sob medida. Com sólida experiência em Banco de Dados,
+              Desenvolvimento Web (React/Next.js) e Automação Empresarial, busco
+              sempre aliar agilidade técnica com foco no resultado final.
             </p>
           </section>
 

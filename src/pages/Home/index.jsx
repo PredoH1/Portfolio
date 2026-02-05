@@ -9,9 +9,21 @@ function Home() {
   const experiences = [
     {
       company: "COTY Brasil",
+      role: "Assistente de Automação e BI",
+      location: "Coty - Goiânia/Goias",
+      date: "Nov 2025 - Present",
+      details: [
+        "Atuo no suporte e desenvolvimento de melhorias para fluxos logísticos, utilizando tecnologia para transformar processos manuais em soluções digitais. Meu trabalho consiste em apoiar a operação através da análise de dados e da criação de ferramentas que trazem mais agilidade e visibilidade para a área, com foco especial em Logística Reversa.",
+        "Análise de Dados e BI: Apoio na criação de indicadores (KPIs) no Power BI, realizando desde o tratamento de dados no Power Query e gerenciamento de relacionamentos até a criação de medidas em DAX para facilitar a tomada de decisão.",
+        "Digitalização de Processos: Desenvolvimento de aplicativos operacionais em PowerApps (PowerFx), focados em facilitar a coleta de dados e a rotina da Logística Reversa.",
+        "Automação de Rotinas: Criação de fluxos de automação utilizando Power Automate, Python e macros para integrar dados entre SAP e Excel, visando reduzir tarefas repetitivas e erros manuais.",
+      ],
+    },
+    {
+      company: "COTY Brasil",
       role: "Jovem Profissional/ Estagiário",
       location: "Coty - Goiânia/Goias",
-      date: "Jun 2024 - Present",
+      date: "Jun 2024 - Nov 2025",
       details: [
         "Suporte ao time de Logística Reversa, utilizando SAP (transações MIGO, MB52, LS26, LS22, LT06, LT12, MB51, ZPP195, ZMM077) para movimentações entre estoques, análise e acompanhamento de processos. ",
         "Manipulação e análise de dados via Excel, com foco em filtragem, listagem e consolidação de informações. ",
@@ -61,18 +73,15 @@ function Home() {
             <p className={style.apresentacao}>Ola, me chamo</p>
             <h1 className={style.nomeTitle}>Pedro Henrique Souza Candido</h1>
             <p className={style.apresentacao}>
-              graduando em Sistemas de Informação e atualmente atuo como
-              Desenvolvedor de Automação na multinacional Coty. Paralelamente,
-              trabalho como freelancer na área de desenvolvimento web, mobile e
-              automação empresarial, com foco em otimizar processos e
-              simplificar a rotina de negócios por meio de soluções ágeis e
-              inteligentes. Ao longo da minha trajetória, tive o privilégio de
-              participar de diversos projetos corporativos e acadêmicos,
-              adquirindo experiência prática e sólida em diferentes contextos
-              tecnológicos. Possuo certificações em Desenvolvimento Web, Banco
-              de Dados, Cibersegurança, Excel, VBA, Inglês e Logística, o que me
-              permite atuar com segurança e versatilidade em múltiplas frentes
-              de desenvolvimento.
+              Me chamo Pedro Henrique e atuo como Assistente de Automação e BI
+              na Coty, focado em transformar processos logísticos através de
+              dados e tecnologia. Trabalho na criação de indicadores
+              estratégicos em Power BI (DAX/Power Query) e no desenvolvimento de
+              aplicativos operacionais com PowerApps (Power Fx), visando
+              otimizar a Logística Reversa e a eficiência da área. Minha rotina
+              une análise de dados, automações com Power Automate, Python e VBA,
+              e integrações com SAP. Nas horas vagas, atuo como desenvolvedor
+              Front-End freelancer.
             </p>
           </section>
 
