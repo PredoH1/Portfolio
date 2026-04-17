@@ -5,19 +5,44 @@ import PlannerPlay1 from "../../images/PlannerPlay1.png";
 import Suple1 from "../../images/Suple1.png";
 import CapLogistica1 from "../../images/CapLogistica1.png";
 import AutoSAP1 from "../../images/AutoSAP1.png";
+import torreControle from "../../images/torreControle.jpeg";
 
 function Grid() {
   const projects = [
     {
       id: 1,
       image: AutoRisque,
-      name: "Automação Risque",
+      name: "Impressão de Etiquetas de Risque e Biocolor",
       description:
-        "Essa automação foi desenvolvido para a Logistica Reversa da Coty, onde foi indentificado a necessidade de criar uma ferramenta simples e agil para a demanda da area, solucionando um problema da area, esse aplicativo permite imprimir etiquetas de risque em massa",
-      techs: ["HTML", "CSS", "Javascript", "ZPL", "Excel"],
+        "Sistema de impressão de etiquetas integrado ao SAP que automatiza o processo, elimina etapas manuais e reduz em 60% o tempo operacional na Logística Reversa.",
+      techs: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "ZPL",
+        "Excel",
+        "VBS",
+        "Python",
+        "SAP",
+      ],
     },
     {
       id: 2,
+      image: torreControle,
+      name: "Torre de Controle - Reversa",
+      description:
+        "Sistema que centraliza aplicações e dashboards da Logística Reversa em um único ambiente, funcionando como um hub para organização operacional e apoio à tomada de decisão, com gestão autônoma pela equipe.",
+      techs: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Google Script",
+        "Weather API",
+        "Google Sheets",
+      ],
+    },
+    {
+      id: 3,
       image: PlannerPlay1,
       name: "CACByPlannerPlay",
       description:
@@ -34,7 +59,7 @@ function Grid() {
       ],
     },
     {
-      id: 3,
+      id: 4,
       image: Suple1,
       name: "Aplicativo Suplementando",
       description:
@@ -42,7 +67,7 @@ function Grid() {
       techs: ["React Native", "Firebase", "Figma"],
     },
     {
-      id: 4,
+      id: 5,
       image: CapLogistica1,
       name: "Programa de Capacitação em Logística",
       description:
@@ -51,7 +76,7 @@ function Grid() {
     },
 
     {
-      id: 5,
+      id: 6,
       image: AutoSAP1,
       name: "Automação SAP - Buscar e Filtrar Dados",
       description:

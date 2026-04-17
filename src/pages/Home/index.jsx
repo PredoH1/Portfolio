@@ -4,6 +4,7 @@ import style from "../Home/Home.module.css";
 import React, { useState } from "react";
 import ContactGrid from "../../components/ContactGrid";
 import Footer from "../../components/Footer";
+import ActivityGallery from "../../components/ActivityGallery";
 
 function Home() {
   const experiences = [
@@ -13,10 +14,13 @@ function Home() {
       location: "Coty - Goiânia/Goias",
       date: "Nov 2025 - Present",
       details: [
-        "Atuo no suporte e desenvolvimento de melhorias para fluxos logísticos, utilizando tecnologia para transformar processos manuais em soluções digitais. Meu trabalho consiste em apoiar a operação através da análise de dados e da criação de ferramentas que trazem mais agilidade e visibilidade para a área, com foco especial em Logística Reversa.",
-        "Análise de Dados e BI: Apoio na criação de indicadores (KPIs) no Power BI, realizando desde o tratamento de dados no Power Query e gerenciamento de relacionamentos até a criação de medidas em DAX para facilitar a tomada de decisão.",
-        "Digitalização de Processos: Desenvolvimento de aplicativos operacionais em PowerApps (PowerFx), focados em facilitar a coleta de dados e a rotina da Logística Reversa.",
-        "Automação de Rotinas: Criação de fluxos de automação utilizando Power Automate, Python e macros para integrar dados entre SAP e Excel, visando reduzir tarefas repetitivas e erros manuais.",
+        "Criação e acompanhamento de KPIs logísticos (Power BI)",
+        "Tratamento e modelagem de dados (Power Query e DAX)",
+        "Movimentação e extração de dados logísticos no SAP",
+        "Desenvolvimento de aplicativos operacionais",
+        "Manutenção e melhoria contínua de aplicações internas",
+        "Automação de rotinas e processos (Power Automate, Python e Excel)",
+        "Digitalização de processos manuais",
       ],
     },
     {
@@ -73,20 +77,23 @@ function Home() {
             <p className={style.apresentacao}>Ola, me chamo</p>
             <h1 className={style.nomeTitle}>Pedro Henrique Souza Candido</h1>
             <p className={style.apresentacao}>
-              Me chamo Pedro Henrique e atuo como Assistente de Automação e BI
-              na Coty, focado em transformar processos logísticos através de
-              dados e tecnologia. Trabalho na criação de indicadores
-              estratégicos em Power BI (DAX/Power Query) e no desenvolvimento de
-              aplicativos operacionais com PowerApps (Power Fx), visando
-              otimizar a Logística Reversa e a eficiência da área. Minha rotina
-              une análise de dados, automações com Power Automate, Python e VBA,
-              e integrações com SAP. Nas horas vagas, atuo como desenvolvedor
-              Front-End freelancer.
+              Sou Pedro Henrique Souza Candido, graduando em Sistemas de
+              Informação e Assistente de Automação e BI na Coty. Atuo na
+              integração entre Logística e Tecnologia, desenvolvendo soluções
+              que automatizam processos e geram valor para o negócio. Trabalho
+              com Power BI (DAX/Power Query), PowerApps e automações que
+              conectam Python, SAP e o ecossistema Power Platform. Também atuo
+              como desenvolvedor freelancer, criando aplicações web e mobile sob
+              medida. Tenho experiência em Banco de Dados, desenvolvimento com
+              React/Next.js e automação empresarial, sempre focado em
+              eficiência, escalabilidade e resultados.
             </p>
           </section>
 
+          <ActivityGallery />
+
           <section className={style.experience}>
-            <h1 className={style.titleHome}>Experience</h1>
+            <h1 className={style.titleHome}>Experiências</h1>
             <div className={style.carousel}>
               <button
                 className={style.arrow}
@@ -135,7 +142,7 @@ function Home() {
             </div>
           </section>
           <section className={style.projetos}>
-            <h2>Featured Projects</h2>
+            <h2>Projetos Recentes</h2>
             <Grid />
           </section>
           <section className={style.contato}>

@@ -6,6 +6,8 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 import AutoRisque from "../../images/AutoRisque.png";
+import torreControle from "../../images/torreControle.jpeg";
+import torreControle2 from "../../images/torreControle2.jpeg";
 import PlannerPlay1 from "../../images/PlannerPlay1.png";
 import PlannerPlay2 from "../../images/PlannerPlay2.png";
 import PlannerPlay3 from "../../images/PlannerPlay3.png";
@@ -28,14 +30,45 @@ const projects = [
   {
     id: 1,
     name: "Automação Risque",
-    description:
-      "Essa automação foi desenvolvido para a Logistica Reversa da Coty, onde foi indentificado a necessidade de criar uma ferramenta simples e agil para a demanda da area, solucionando um problema da area, esse aplicativo permite imprimir etiquetas de risque em massa. O aplicativo puxa os dados das etiquetas de risque do Excel.",
+    description: [
+      "Sistema de impressão de etiquetas (Risque e Biocolor) desenvolvido para substituir o processo anterior, que era manual, repetitivo e dependente de equipamentos adicionais. A nova solução automatiza a geração de dados diretamente do SAP, eliminando etapas como a leitura de código de barras.",
+
+      "Com menos etapas e fluxo simplificado, o sistema reduziu em cerca de 60% o tempo do processo, aumentando a eficiência operacional na Logística Reversa da Coty.",
+    ],
     images: [AutoRisque],
-    techs: ["HTML", "CSS", "Javascript", "ZPL", "Excel"],
+    techs: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "ZPL",
+      "Excel",
+      "VBS",
+      "Python",
+      "SAP",
+    ],
     github: "https://github.com/PredoH1/RisqueAutomac",
   },
   {
     id: 2,
+    name: "Torre de Controle - Reversa",
+    description: [
+      "Projeto desenvolvido para centralizar sistemas e dashboards da área de Logística Reversa, criando um ambiente único para organização operacional e suporte à tomada de decisão. A solução funciona como um hub integrado, onde todos os relatórios e aplicações ficam disponíveis em um só lugar.",
+
+      "Atualmente, é utilizado por 100% da equipe, com funcionamento automatizado e autonomia total para assistentes e analistas gerenciarem (criar, editar e excluir) aplicativos e relatórios da torre de controle.",
+    ],
+    images: [torreControle, torreControle2],
+    techs: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Google Script",
+      "Weather API",
+      "Google Sheets",
+    ],
+    github: "https://github.com/PredoH1/RisqueAutomac",
+  },
+  {
+    id: 3,
     name: "CACByPlannerPlay",
     description:
       "Projeto universitário voltado ao desenvolvimento de uma plataforma web para pequenos empreendedores com pouca familiaridade com tecnologia, como pessoas idosas. A solução elimina o uso de papel e simplifica a gestão do negócio.",
@@ -60,7 +93,7 @@ const projects = [
     demo: "https://cacplannerplay.netlify.app",
   },
   {
-    id: 3,
+    id: 4,
     name: "Aplicativo Suplementando",
     description:
       "Suplementando é um aplicativo fitness desenvolvido em colaboração com profissionais da área da saúde, voltado para qualquer pessoa que pratique esportes, musculação ou atividades físicas. O aplicativo permite que o usuário verifique se um suplemento é adequado para o seu dia a dia, consulte os ingredientes de cada suplemento, confira a nota do suplemento baseada nos critérios da ANVISA para uso no Brasil, compare diferentes suplementos e pesquise termos relacionados à nutrição esportiva e suplementação. O projeto está em fase de desenvolvimento e já conquistou reconhecimento estadual ao participar da competição Desafio Liga Jovem, destacando-se pelo planejamento, colaboração e impacto na comunidade fitness. Com o Suplementando, buscamos oferecer informações confiáveis e seguras, ajudando os usuários a fazer escolhas conscientes sobre sua suplementação e saúde.",
@@ -70,7 +103,7 @@ const projects = [
     github: "https://github.com/PredoH1/SuplementandoApp",
   },
   {
-    id: 4,
+    id: 5,
     name: "Programa de Capacitação em Logística",
     description:
       "O Programa de Capacitação em Logística da empresa Coty tem como objetivo desenvolver competências essenciais e fortalecer a operação logística, promovendo integração entre os colaboradores e uma visão abrangente da gestão logística. Para apoiar os participantes, foi criado um site que permite revisar o conteúdo das aulas, realizar exercícios teóricos e práticos e praticar Excel diretamente na plataforma. Durante o desenvolvimento e manutenção da plataforma, atuei na criação de componentes interativos, como o carrossel de informativos em JavaScript, Footer e outros elementos, além de manter o site sempre atualizado com novas informações, eventos da empresa e conteúdos das aulas. Também criei a integração entre o Google Sites e o Excel, garantindo uma experiência mais completa e eficiente para os usuários.",
@@ -80,7 +113,7 @@ const projects = [
     github: "",
   },
   {
-    id: 5,
+    id: 6,
     name: "Automação SAP - Buscar e Filtrar Dados",
     description:
       "Esta automação foi desenvolvida para a área de Logística Reversa da Coty, com o objetivo de extrair dados de depósitos diretamente do SAP e organizá-los automaticamente no Excel. Com apenas um clique, a automação insere o centro, o depósito e a variável de exibição. Em seguida, filtra apenas os materiais com quantidade maior que zero e exporta os dados já no layout correto para transferência entre depósitos. Antes da automação, essa tarefa precisava ser feita manualmente várias vezes ao dia, consumindo tempo e aumentando a chance de erros. Com a implementação da solução, o processo se tornou mais rápido, preciso e eficiente, automatizando uma operação repetitiva e liberando tempo para atividades mais estratégicas na equipe logística.",
@@ -108,13 +141,13 @@ export default function ProjectDetail() {
 
   const handlePrev = () => {
     setCurrentImage((prev) =>
-      prev === 0 ? project.images.length - 1 : prev - 1
+      prev === 0 ? project.images.length - 1 : prev - 1,
     );
   };
 
   const handleNext = () => {
     setCurrentImage((prev) =>
-      prev === project.images.length - 1 ? 0 : prev + 1
+      prev === project.images.length - 1 ? 0 : prev + 1,
     );
   };
 
