@@ -1,7 +1,7 @@
 import style from "./ActivityGallery.module.css";
 import timeReversa from "../../images/timeReversa.jpeg";
 import apresentacaoMelhorias from "../../images/apresentacaoMelhorias.jpeg";
-import projetoSuple from "../../images/projetoSuple.jpg";
+import projetoSuple from "../../images/projetoSuple.JPG";
 import AutoRisque from "../../images/AutoRisque.png";
 
 function ActivityGallery() {
