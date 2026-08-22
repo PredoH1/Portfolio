@@ -1,90 +1,14 @@
 .sectionInfo {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family);
   min-height: 100vh; /* antes era height, trocamos para min-height */
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-color: #111111;
+  background-color: var(--color-bg);
   gap: 2rem;
   padding-top: 120px; /* espaço para o Header fixo */
   box-sizing: border-box;
-}
-
-/* From Uiverse.io by vinodjangid07 */
-
-/* for all social containers*/
-.card {
-  width: fit-content;
-  height: fit-content;
-  background-color: #111111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 25px;
-  gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-}
-
-/* for all social containers*/
-.socialContainer {
-  width: 102px;
-  height: 102px;
-  background-color: rgb(44, 44, 44);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition-duration: 0.3s;
-}
-/* instagram*/
-.containerOne:hover {
-  background-color: #d62976;
-  transition-duration: 0.3s;
-}
-/* twitter*/
-.containerTwo:hover {
-  background-color: #00acee;
-  transition-duration: 0.3s;
-}
-/* linkdin*/
-.containerThree:hover {
-  background-color: #0072b1;
-  transition-duration: 0.3s;
-}
-/* Whatsapp*/
-.containerFour:hover {
-  background-color: #128c7e;
-  transition-duration: 0.3s;
-}
-
-.socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: 0.3s;
-}
-
-.socialSvg {
-  width: 27px;
-}
-
-.socialSvg path {
-  fill: rgb(255, 255, 255);
-}
-
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 @media (max-width: 768px) {
@@ -92,35 +16,11 @@
     padding-top: 100px;
     padding-bottom: 50px;
   }
-
-  .card {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .socialContainer {
-    width: 80px;
-    height: 80px;
-  }
-
-  .socialSvg {
-    width: 22px;
-  }
 }
 
 @media (max-width: 480px) {
   .sectionInfo {
     gap: 1.5rem;
     padding-top: 80px;
-  }
-
-  .socialContainer {
-    width: 70px;
-    height: 70px;
-  }
-
-  .socialSvg {
-    width: 20px;
   }
 }

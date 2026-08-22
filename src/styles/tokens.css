@@ -1,0 +1,41 @@
+:root {
+  --color-bg: #111111;
+  --color-surface: #181818;
+  --color-surface-alt: #1f1f1f;
+  --color-border: #2e2e2e;
+  --color-border-strong: #444444;
+  --color-text: #ffffff;
+  --color-text-muted: #b3b3b3;
+
+  --gradient-accent: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
+  --color-accent-purple: #9845e8;
+  --color-accent-cyan: #33d2ff;
+  --color-accent-pink: #dd5789;
+  --color-danger: #e5484d;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --shadow-card-hover: 0 8px 28px rgba(0, 0, 0, 0.5);
+
+  --font-family: "Inter", sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}

@@ -1,7 +1,7 @@
 /* Resume.module.css */
 .main {
-  font-family: "Inter", sans-serif;
-  background-color: #111111;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
   color: #fff;
   min-height: 100vh;
   padding-top: 50px;
@@ -107,6 +107,13 @@
   border-color: #888;
 }
 
+.certButton:focus-visible,
+.closeModal:focus-visible,
+.backLink:focus-visible {
+  outline: 2px solid var(--color-accent-cyan);
+  outline-offset: 2px;
+}
+
 /* Modal */
 .modalOverlay {
   position: fixed;
@@ -167,7 +174,7 @@
 
 .contactCall h2 {
   font-size: 30px;
-  background: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
+  background: var(--gradient-accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -181,78 +188,6 @@
 
 .contactCall li {
   font-size: 17px;
-}
-
-.card {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 25px;
-  gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-}
-
-/* for all social containers*/
-.socialContainer {
-  width: 102px;
-  height: 102px;
-  background-color: rgb(44, 44, 44);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition-duration: 0.3s;
-}
-/* instagram*/
-.containerOne:hover {
-  background-color: #d62976;
-  transition-duration: 0.3s;
-}
-/* twitter*/
-.containerTwo:hover {
-  background-color: #00acee;
-  transition-duration: 0.3s;
-}
-/* linkdin*/
-.containerThree:hover {
-  background-color: #0072b1;
-  transition-duration: 0.3s;
-}
-/* Whatsapp*/
-.containerFour:hover {
-  background-color: #128c7e;
-  transition-duration: 0.3s;
-}
-
-.socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: 0.3s;
-}
-
-.socialSvg {
-  width: 27px;
-}
-
-.socialSvg path {
-  fill: rgb(255, 255, 255);
-}
-
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 /* Responsivo */
@@ -276,14 +211,5 @@
 
   .contactCall ul {
     width: 100%;
-  }
-
-  .socialContainer {
-    width: 60px;
-    height: 60px;
-  }
-
-  .socialSvg {
-    width: 15px;
   }
 }

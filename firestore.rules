@@ -1,0 +1,93 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.uid == "DxttzpDFOIcbRB7UlzlM4VVrcQY2";
+    }
+
+    function isValidProject(data) {
+      return data.name is string && data.name.size() > 0 && data.name.size() <= 120
+        && data.summary is string && data.summary.size() <= 300
+        && data.description is list && data.description.size() >= 1 && data.description.size() <= 10
+        && data.images is list && data.images.size() >= 1 && data.images.size() <= 10
+        && data.techs is list && data.techs.size() >= 1 && data.techs.size() <= 30
+        && data.order is number;
+    }
+
+    function isValidExperience(data) {
+      return data.company is string && data.company.size() <= 120
+        && data.role is string && data.role.size() <= 120
+        && data.location is string && data.location.size() <= 120
+        && data.date is string && data.date.size() <= 60
+        && data.details is list && data.details.size() >= 1 && data.details.size() <= 15
+        && data.order is number;
+    }
+
+    function isValidActivity(data) {
+      return data.title is string && data.title.size() <= 120
+        && data.description is string && data.description.size() <= 600
+        && data.tag in ["Trabalho", "Projeto", "Competição", "Certificação"]
+        && data.date is string && data.date.size() <= 60
+        && data.order is number;
+    }
+
+    function isValidTechIcon(data) {
+      return data.name is string && data.name.size() <= 60
+        && data.iconUrl is string
+        && data.order is number;
+    }
+
+    function isValidCertificate(data) {
+      return data.name is string && data.name.size() <= 120
+        && data.fileUrl is string
+        && data.fileType in ["pdf", "image"]
+        && data.order is number;
+    }
+
+    function isValidProfile(data) {
+      return data.bio is string && data.bio.size() <= 2000
+        && data.servicesOffered is list && data.servicesOffered.size() <= 15
+        && data.socialLinks is map;
+    }
+
+    match /projects/{id} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidProject(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    match /experiences/{id} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidExperience(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    match /activities/{id} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidActivity(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    match /techIcons/{id} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidTechIcon(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    match /certificates/{id} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidCertificate(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    match /settings/profile {
+      allow read: if true;
+      allow write: if isAdmin() && isValidProfile(request.resource.data);
+    }
+
+    // Tudo o mais é negado por padrão (nenhum match coringa concede acesso)
+  }
+}

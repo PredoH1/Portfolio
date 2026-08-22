@@ -11,10 +11,10 @@ function ContactGrid() {
 
     emailjs
       .sendForm(
-        "service_0opgvpm", // ID do serviço no EmailJS
-        "template_yp4slvp", // ID do template no EmailJS
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        "hk4EdxdSkIthHyA9N" // Public key do EmailJS
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {

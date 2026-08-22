@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+# Environment variables (Firebase/Cloudinary/EmailJS keys)
+.env
+.env.*
+!.env.example
+
+# Firebase Admin SDK service account (usado só pelo script de seed local)
+service-account.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

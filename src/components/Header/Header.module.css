@@ -1,6 +1,6 @@
 .header {
-  background-color: #111111;
-  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg);
+  font-family: var(--font-family);
 }
 
 .container {
@@ -28,6 +28,17 @@ nav a {
   text-decoration: none;
   margin: 0px 10px;
   font-weight: 300;
+  transition: color var(--transition-fast);
+}
+
+nav a:hover {
+  color: var(--color-accent-cyan);
+}
+
+nav a:focus-visible,
+.menuIcon:focus-visible {
+  outline: 2px solid var(--color-accent-cyan);
+  outline-offset: 2px;
 }
 
 .menuIcon {

@@ -1,10 +1,10 @@
 .card {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-family);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #111;
-  border-radius: 20px;
+  background-color: var(--color-bg);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   padding: 3rem 2rem;
   gap: 3rem;
@@ -104,6 +104,12 @@
 .form button:active {
   transform: scale(0.97);
   box-shadow: 1px 1px 20px #9845e8cc, -1px -1px 20px #33d2ffcc;
+}
+
+.form button:focus-visible,
+.whatsappBtn:focus-visible {
+  outline: 2px solid var(--color-accent-cyan);
+  outline-offset: 2px;
 }
 
 /* Botão WhatsApp */

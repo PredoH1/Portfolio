@@ -1,8 +1,8 @@
 /* SECTION APRESENTACAO */
 
 .main {
-  font-family: "Inter", sans-serif;
-  background-color: #111111;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
   padding: 50px 0px 100px 0px;
   color: #ffffff;
   min-height: 100vh;
@@ -29,7 +29,7 @@
 .nomeTitle {
   font-size: 80px;
   font-weight: 400;
-  background: linear-gradient(90deg, #9845e8 0%, #33d2ff 55%, #dd5789 100%);
+  background: var(--gradient-accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -52,6 +52,12 @@
   font-weight: 200;
   letter-spacing: 1px;
   color: #fff;
+}
+
+.status {
+  color: #bbb;
+  font-size: 0.95rem;
+  padding: 1rem 0;
 }
 
 .carousel {
@@ -84,6 +90,12 @@
   border: 1px solid #444;
   color: #fff;
   font-weight: 500;
+}
+
+.tab:focus-visible,
+.arrow:focus-visible {
+  outline: 2px solid var(--color-accent-cyan);
+  outline-offset: 2px;
 }
 
 .arrow {

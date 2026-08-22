@@ -1,0 +1,47 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.input {
+  color: var(--color-text);
+  font-size: var(--text-sm);
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+}
+
+.previewImg {
+  max-width: 160px;
+  max-height: 120px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border-strong);
+  object-fit: cover;
+}
+
+.pdfBadge {
+  font-size: var(--text-sm);
+  color: var(--color-accent-cyan);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-2);
+}
+
+.status {
+  font-size: var(--text-sm);
+  color: var(--color-accent-cyan);
+}
+
+.error {
+  font-size: var(--text-sm);
+  color: var(--color-danger);
+}

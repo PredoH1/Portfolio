@@ -1,0 +1,107 @@
+/* From Uiverse.io by vinodjangid07 */
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5);
+  gap: var(--space-5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+.socialContainer {
+  width: 102px;
+  height: 102px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background-color var(--transition-base);
+  cursor: pointer;
+}
+
+.socialContainer.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+}
+.containerTwo:hover {
+  background-color: #00acee;
+}
+.containerThree:hover {
+  background-color: #0072b1;
+}
+.containerFour:hover {
+  background-color: #128c7e;
+}
+
+.socialContainer.disabled:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+}
+
+.socialContainer:focus-visible {
+  outline: 2px solid var(--color-accent-cyan);
+  outline-offset: 2px;
+}
+
+.socialSvg {
+  width: 27px;
+}
+
+.socialSvg path {
+  fill: var(--color-text);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+
+  .socialContainer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .socialSvg {
+    width: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialContainer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .socialSvg {
+    width: 20px;
+  }
+}
